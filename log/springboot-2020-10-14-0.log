@@ -1,0 +1,10 @@
+2020-10-14 14:57:58.775 [ main ] - [ INFO  ] [ com.bank.BankApplicationTests : 48 ] - Starting BankApplicationTests on Kurts-MacBook-Pro.local with PID 936 (started by kurtfile in /Users/kurtfile/IT/IdeaProjects/bank-master)
+2020-10-14 14:57:58.792 [ main ] - [ DEBUG ] [ com.bank.BankApplicationTests : 51 ] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2020-10-14 14:57:58.794 [ main ] - [ INFO  ] [ com.bank.BankApplicationTests : 593 ] - No active profile set, falling back to default profiles: default
+2020-10-14 14:57:59.264 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 30 ] - HV000001: Hibernate Validator 5.3.6.Final
+2020-10-14 14:58:02.465 [ main ] - [ INFO  ] [ com.bank.BankApplicationTests : 57 ] - Started BankApplicationTests in 4.363 seconds (JVM running for 5.171)
+2020-10-14 15:00:46.859 [ main ] - [ INFO  ] [ com.bank.BankApplicationTests : 48 ] - Starting BankApplicationTests on Kurts-MacBook-Pro.local with PID 958 (started by kurtfile in /Users/kurtfile/IT/IdeaProjects/bank-master)
+2020-10-14 15:00:46.860 [ main ] - [ DEBUG ] [ com.bank.BankApplicationTests : 51 ] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2020-10-14 15:00:46.861 [ main ] - [ INFO  ] [ com.bank.BankApplicationTests : 593 ] - No active profile set, falling back to default profiles: default
+2020-10-14 15:00:47.214 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 30 ] - HV000001: Hibernate Validator 5.3.6.Final
+2020-10-14 15:00:50.180 [ main ] - [ INFO  ] [ com.bank.BankApplicationTests : 57 ] - Started BankApplicationTests in 3.88 seconds (JVM running for 4.554)

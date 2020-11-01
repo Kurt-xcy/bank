@@ -1,0 +1,35 @@
+2020-10-12 19:04:38.192 [ main ] - [ INFO  ] [ com.bank.BankApplication : 48 ] - Starting BankApplication on Kurts-MBP with PID 6782 (/Users/kurtfile/IT/IdeaProjects/bank-master/target/classes started by kurtfile in /Users/kurtfile/IT/IdeaProjects/bank-master)
+2020-10-12 19:04:38.196 [ main ] - [ DEBUG ] [ com.bank.BankApplication : 51 ] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2020-10-12 19:04:38.197 [ main ] - [ INFO  ] [ com.bank.BankApplication : 593 ] - No active profile set, falling back to default profiles: default
+2020-10-12 19:04:38.302 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 30 ] - HV000001: Hibernate Validator 5.3.6.Final
+2020-10-12 19:04:39.695 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 180 ] - Starting service [Tomcat]
+2020-10-12 19:04:39.696 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 180 ] - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-10-12 19:04:39.754 [ localhost-startStop-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring embedded WebApplicationContext
+2020-10-12 19:04:42.085 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-12 19:04:42.092 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-12 19:04:42.110 [ main ] - [ INFO  ] [ org.apache.tomcat.util.net.NioSelectorPool : 180 ] - Using a shared selector for servlet write/read
+2020-10-12 19:04:42.129 [ main ] - [ INFO  ] [ com.bank.BankApplication : 57 ] - Started BankApplication in 4.296 seconds (JVM running for 4.771)
+2020-10-12 19:04:54.513 [ RMI TCP Connection(6)-192.168.43.189 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-10-12 19:08:33.160 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-12 19:08:49.224 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==>  Preparing: select user_id, user_name, password, user_type, phone, address, email from bank_user WHERE ( user_name = ? and password = ? ) 
+2020-10-12 19:08:49.264 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==> Parameters: zjxcy123(String), 20e4ad414db748a870a5a8f18a28184a(String)
+2020-10-12 19:08:49.373 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-12 19:08:53.615 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==>  Preparing: select user_id, user_name, password, user_type, phone, address, email from bank_user WHERE ( user_name = ? and password = ? ) 
+2020-10-12 19:08:53.615 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==> Parameters: zjxcy123(String), 187a6fff600a3c15bdf34874369a843c(String)
+2020-10-12 19:08:53.665 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-12 19:09:11.389 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankFundProductMapper.selectByExample : 159 ] - ==>  Preparing: select purchase_date, fund_id, type, purchase_rate, net_asset_value, redemption_rate from bank_fund_product WHERE ( fund_id is not null ) 
+2020-10-12 19:09:11.392 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankFundProductMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-12 19:09:11.455 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankFundProductMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-12 19:09:13.597 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankFundLogMapper.selectByExample : 159 ] - ==>  Preparing: select fund_tx_id, cust_id, account, fund_id, type, amount, share, tx_date, review_id from bank_fund_log WHERE ( fund_tx_id is not null ) 
+2020-10-12 19:09:13.598 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankFundLogMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-12 19:09:13.649 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankFundLogMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-12 19:09:15.960 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankFundHoldMapper.selectByExample : 159 ] - ==>  Preparing: select account, fund_id, cust_id, share from bank_fund_hold WHERE ( account is not null ) 
+2020-10-12 19:09:15.961 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankFundHoldMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-12 19:09:16.008 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankFundHoldMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-12 19:09:18.471 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankFundLogMapper.selectByExample : 159 ] - ==>  Preparing: select fund_tx_id, cust_id, account, fund_id, type, amount, share, tx_date, review_id from bank_fund_log WHERE ( fund_tx_id is not null ) 
+2020-10-12 19:09:18.472 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankFundLogMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-12 19:09:18.513 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankFundLogMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-12 19:09:19.192 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankFundProductMapper.selectByExample : 159 ] - ==>  Preparing: select purchase_date, fund_id, type, purchase_rate, net_asset_value, redemption_rate from bank_fund_product WHERE ( fund_id is not null ) 
+2020-10-12 19:09:19.192 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankFundProductMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-12 19:09:19.242 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankFundProductMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-12 22:24:20.686 [ Thread-9 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed

@@ -1,0 +1,573 @@
+2020-10-17 15:13:08.257 [ main ] - [ INFO  ] [ com.bank.BankApplication : 48 ] - Starting BankApplication on Kurts-MacBook-Pro.local with PID 1862 (/Users/kurtfile/IT/IdeaProjects/bank-master/target/classes started by kurtfile in /Users/kurtfile/IT/IdeaProjects/bank-master)
+2020-10-17 15:13:08.262 [ main ] - [ DEBUG ] [ com.bank.BankApplication : 51 ] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2020-10-17 15:13:08.262 [ main ] - [ INFO  ] [ com.bank.BankApplication : 593 ] - No active profile set, falling back to default profiles: default
+2020-10-17 15:13:08.401 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 30 ] - HV000001: Hibernate Validator 5.3.6.Final
+2020-10-17 15:13:09.797 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 180 ] - Starting service [Tomcat]
+2020-10-17 15:13:09.799 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 180 ] - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-10-17 15:13:09.879 [ localhost-startStop-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring embedded WebApplicationContext
+2020-10-17 15:13:11.564 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-17 15:13:11.572 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-17 15:13:11.590 [ main ] - [ INFO  ] [ org.apache.tomcat.util.net.NioSelectorPool : 180 ] - Using a shared selector for servlet write/read
+2020-10-17 15:13:11.613 [ main ] - [ INFO  ] [ com.bank.BankApplication : 57 ] - Started BankApplication in 3.738 seconds (JVM running for 4.408)
+2020-10-17 15:13:18.871 [ RMI TCP Connection(3)-127.0.0.1 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-10-17 15:15:43.096 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-17 15:16:01.015 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==>  Preparing: select user_id, user_name, password, user_type, phone, address, email from bank_user WHERE ( user_name = ? and password = ? ) 
+2020-10-17 15:16:01.048 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==> Parameters: zjxcy123(String), 187a6fff600a3c15bdf34874369a843c(String)
+2020-10-17 15:16:01.062 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:16:17.430 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 15:16:17.433 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:16:17.478 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:16:23.375 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 15:16:23.375 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:16:23.575 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:16:30.298 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 15:16:30.299 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:16:32.398 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:19:18.678 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 15:19:18.678 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:19:18.686 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:19:23.629 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 15:19:23.630 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:19:23.641 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:19:54.978 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer WHERE ( cust_name = ? ) 
+2020-10-17 15:19:54.979 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 许昌源2(String)
+2020-10-17 15:19:54.991 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-17 15:19:54.992 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.insert : 159 ] - ==>  Preparing: insert into bank_customer (cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-10-17 15:19:54.997 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.insert : 159 ] - ==> Parameters: 277458221755805696(String), 许昌源2(String), b56b94a9f7b6b49275cf974604ed4512(String), 330326199511171811(String), 2(String), false(Boolean), 17816876754(String), 内蒙古包头市青山区浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区(String), zjxcy123@163.com(String), 1(String)
+2020-10-17 15:19:55.018 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.insert : 159 ] - <==    Updates: 1
+2020-10-17 15:19:55.061 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 15:19:55.061 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:19:55.069 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 2
+2020-10-17 15:20:37.179 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer WHERE ( cust_name = ? ) 
+2020-10-17 15:20:37.179 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 许昌源3(String)
+2020-10-17 15:20:37.223 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-17 15:20:42.037 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer WHERE ( cust_name = ? ) 
+2020-10-17 15:20:42.037 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 许昌源3(String)
+2020-10-17 15:20:42.053 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-17 15:20:59.209 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer WHERE ( cust_name = ? ) 
+2020-10-17 15:20:59.210 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 许昌源2(String)
+2020-10-17 15:20:59.218 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:20:59.231 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.insert : 159 ] - ==>  Preparing: insert into bank_account (account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-10-17 15:20:59.233 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.insert : 159 ] - ==> Parameters: 6668602919259211(String), 277458221755805696(String), 天津市天津河东区浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区(String), 0.0(Double), 0.0(Double), 1602919259231(String), null, 2(String), 2(String), null, b56b94a9f7b6b49275cf974604ed4512(String)
+2020-10-17 15:20:59.822 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.insert : 159 ] - <==    Updates: 1
+2020-10-17 15:20:59.865 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 15:20:59.865 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:20:59.903 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 2
+2020-10-17 15:21:41.421 [ Thread-8 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-10-17 15:21:43.733 [ main ] - [ INFO  ] [ com.bank.BankApplication : 48 ] - Starting BankApplication on Kurts-MacBook-Pro.local with PID 1956 (/Users/kurtfile/IT/IdeaProjects/bank-master/target/classes started by kurtfile in /Users/kurtfile/IT/IdeaProjects/bank-master)
+2020-10-17 15:21:43.735 [ main ] - [ DEBUG ] [ com.bank.BankApplication : 51 ] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2020-10-17 15:21:43.735 [ main ] - [ INFO  ] [ com.bank.BankApplication : 593 ] - No active profile set, falling back to default profiles: default
+2020-10-17 15:21:43.818 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 30 ] - HV000001: Hibernate Validator 5.3.6.Final
+2020-10-17 15:21:44.579 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 180 ] - Starting service [Tomcat]
+2020-10-17 15:21:44.580 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 180 ] - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-10-17 15:21:44.622 [ localhost-startStop-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring embedded WebApplicationContext
+2020-10-17 15:21:46.153 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-17 15:21:46.159 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-17 15:21:46.175 [ main ] - [ INFO  ] [ org.apache.tomcat.util.net.NioSelectorPool : 180 ] - Using a shared selector for servlet write/read
+2020-10-17 15:21:46.188 [ main ] - [ INFO  ] [ com.bank.BankApplication : 57 ] - Started BankApplication in 2.669 seconds (JVM running for 3.27)
+2020-10-17 15:21:47.143 [ RMI TCP Connection(1)-127.0.0.1 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-10-17 15:22:00.677 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-17 15:22:00.762 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==>  Preparing: select user_id, user_name, password, user_type, phone, address, email from bank_user WHERE ( user_name = ? and password = ? ) 
+2020-10-17 15:22:00.791 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==> Parameters: zjxcy123(String), 187a6fff600a3c15bdf34874369a843c(String)
+2020-10-17 15:22:00.804 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:22:42.772 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==>  Preparing: select update_date, current_rate, zczq_tm_rate, zczq_hy_rate, zczq_oy_rate, zczq_twy_rate, zczq_ty_rate, zczq_fy_rate, other_oy_rate, other_ty_rate, other_fy_rate from bank_deposit_rate order by update_date desc 
+2020-10-17 15:22:42.774 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:22:42.785 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:22:56.439 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 15:22:56.440 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:22:56.478 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 2
+2020-10-17 15:23:14.030 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.selectByExample : 159 ] - ==>  Preparing: select deposit_id, cust_id, account, deposit_type, deposit_money, deposit_rate, deposit_date, deposit_duration, transfer_way, reviewer_id, deposit_flag from bank_deposit WHERE ( account = ? ) order by deposit_id desc 
+2020-10-17 15:23:14.031 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.selectByExample : 159 ] - ==> Parameters: 270603386083356672(String)
+2020-10-17 15:23:14.044 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-17 15:23:15.913 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==>  Preparing: select update_date, current_rate, zczq_tm_rate, zczq_hy_rate, zczq_oy_rate, zczq_twy_rate, zczq_ty_rate, zczq_fy_rate, other_oy_rate, other_ty_rate, other_fy_rate from bank_deposit_rate order by update_date desc 
+2020-10-17 15:23:15.914 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:23:15.923 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:23:53.339 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( account = ? ) 
+2020-10-17 15:23:53.340 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 270603386083356672(String)
+2020-10-17 15:23:53.369 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-17 15:24:14.073 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==>  Preparing: select update_date, current_rate, zczq_tm_rate, zczq_hy_rate, zczq_oy_rate, zczq_twy_rate, zczq_ty_rate, zczq_fy_rate, other_oy_rate, other_ty_rate, other_fy_rate from bank_deposit_rate order by update_date desc 
+2020-10-17 15:24:14.073 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:24:14.085 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:25:11.269 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 15:25:11.269 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:25:11.280 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 2
+2020-10-17 15:25:13.080 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-17 15:25:13.082 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 15:25:13.093 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 15:25:13.094 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( cust_id = ? ) 
+2020-10-17 15:25:13.095 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 15:25:13.102 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:25:26.262 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-17 15:25:26.263 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( cust_id = ? ) 
+2020-10-17 15:25:26.263 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 270603386083356672(String)
+2020-10-17 15:25:26.264 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 270603386083356672(String)
+2020-10-17 15:25:26.278 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 15:25:26.278 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:25:33.211 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-17 15:25:33.211 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( cust_id = ? ) 
+2020-10-17 15:25:33.212 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 15:25:33.212 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 15:25:33.304 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:25:33.304 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 15:31:38.324 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==>  Preparing: select update_date, current_rate, zczq_tm_rate, zczq_hy_rate, zczq_oy_rate, zczq_twy_rate, zczq_ty_rate, zczq_fy_rate, other_oy_rate, other_ty_rate, other_fy_rate from bank_deposit_rate order by update_date desc 
+2020-10-17 15:31:38.325 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:31:38.335 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:32:07.863 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( account = ? ) 
+2020-10-17 15:32:07.864 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 15:32:07.879 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:32:07.880 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.insert : 159 ] - ==>  Preparing: insert into bank_deposit (deposit_id, cust_id, account, deposit_type, deposit_money, deposit_rate, deposit_date, deposit_duration, transfer_way, reviewer_id, deposit_flag) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-10-17 15:32:07.886 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.insert : 159 ] - ==> Parameters: 277461295714930688(String), 277458221755805696(String), 6668602919259211(String), 零存整取(String), 10.0(Double), 4.0(Double), 1602919927880(String), 三个月(String), 到期存活(String), 1(String), 0(String)
+2020-10-17 15:32:07.911 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.insert : 159 ] - <==    Updates: 1
+2020-10-17 15:32:07.913 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==>  Preparing: update bank_account SET cust_id = ?, deposit_bank = ?, balances = ?, blocked_balances = ?, open_date = ?, account_kind = ?, account_type = ?, password = ? where account = ? 
+2020-10-17 15:32:07.918 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==> Parameters: 277458221755805696(String), 天津市天津河东区浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区(String), 10.0(Double), 10.0(Double), 1602919259231(String), 2(String), 2(String), b56b94a9f7b6b49275cf974604ed4512(String), 6668602919259211(String)
+2020-10-17 15:32:07.948 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - <==    Updates: 1
+2020-10-17 15:32:20.216 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankWithdrawMapper.selectByExample : 159 ] - ==>  Preparing: select withdraw_id, cust_id, account, withdraw_money, withdraw_date, arrive_time, reviewer_id from bank_withdraw WHERE ( account = ? ) order by withdraw_id desc 
+2020-10-17 15:32:20.217 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankWithdrawMapper.selectByExample : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 15:32:20.361 [ http-nio-8080-exec-3 ] - [ ERROR ] [ druid.sql.Statement : 152 ] - {conn-10007, pstmt-20014} execute error. select
+     
+     
+    withdraw_id, cust_id, account, withdraw_money, withdraw_date, arrive_time, reviewer_id
+   
+    from bank_withdraw
+     
+       
+     WHERE (  account = ? ) 
+   
+     
+     
+      order by withdraw_id desc
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bank.bank_withdraw' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:619)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy114.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy65.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy72.selectByExample(Unknown Source)
+	at com.bank.service.Impl.BankWithdrawServiceImpl.getBankWithdrawByAccount(BankWithdrawServiceImpl.java:71)
+	at com.bank.controller.BankWithdrawController.getBankDepositFromAccount(BankWithdrawController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-17 15:32:24.825 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==>  Preparing: select update_date, current_rate, zczq_tm_rate, zczq_hy_rate, zczq_oy_rate, zczq_twy_rate, zczq_ty_rate, zczq_fy_rate, other_oy_rate, other_ty_rate, other_fy_rate from bank_deposit_rate order by update_date desc 
+2020-10-17 15:32:24.825 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:32:24.838 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:32:36.845 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.selectByExample : 159 ] - ==>  Preparing: select deposit_id, cust_id, account, deposit_type, deposit_money, deposit_rate, deposit_date, deposit_duration, transfer_way, reviewer_id, deposit_flag from bank_deposit WHERE ( account = ? ) order by deposit_id desc 
+2020-10-17 15:32:36.846 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.selectByExample : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 15:32:36.875 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:53:44.990 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( account = ? ) 
+2020-10-17 15:53:44.992 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 15:53:45.009 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:53:56.984 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==>  Preparing: select update_date, current_rate, zczq_tm_rate, zczq_hy_rate, zczq_oy_rate, zczq_twy_rate, zczq_ty_rate, zczq_fy_rate, other_oy_rate, other_ty_rate, other_fy_rate from bank_deposit_rate order by update_date desc 
+2020-10-17 15:53:56.985 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 15:53:56.994 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:54:25.121 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( account = ? ) 
+2020-10-17 15:54:25.122 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 15:54:25.176 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:54:25.177 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.insert : 159 ] - ==>  Preparing: insert into bank_deposit (deposit_id, cust_id, account, deposit_type, deposit_money, deposit_rate, deposit_date, deposit_duration, transfer_way, reviewer_id, deposit_flag) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-10-17 15:54:25.178 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.insert : 159 ] - ==> Parameters: 277466904745086976(String), 277458221755805696(String), 6668602919259211(String), 活期存款(String), 10.0(Double), 2.0(Double), 1602921265176(String), 一年(String), 自动转存(String), 1(String), 0(String)
+2020-10-17 15:54:25.231 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankDepositMapper.insert : 159 ] - <==    Updates: 1
+2020-10-17 15:54:25.232 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==>  Preparing: update bank_account SET cust_id = ?, deposit_bank = ?, balances = ?, blocked_balances = ?, open_date = ?, account_kind = ?, account_type = ?, password = ? where account = ? 
+2020-10-17 15:54:25.235 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==> Parameters: 277458221755805696(String), 天津市天津河东区浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区(String), 20.0(Double), 10.0(Double), 1602919259231(String), 2(String), 2(String), b56b94a9f7b6b49275cf974604ed4512(String), 6668602919259211(String)
+2020-10-17 15:54:25.285 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - <==    Updates: 1
+2020-10-17 15:54:44.747 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( account = ? ) 
+2020-10-17 15:54:44.748 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 15:54:44.763 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 15:54:44.764 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==>  Preparing: update bank_account SET cust_id = ?, deposit_bank = ?, balances = ?, blocked_balances = ?, open_date = ?, account_kind = ?, account_type = ?, password = ? where account = ? 
+2020-10-17 15:54:44.764 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==> Parameters: 277458221755805696(String), 天津市天津河东区浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区(String), 15.0(Double), 10.0(Double), 1602919259231(String), 2(String), 2(String), b56b94a9f7b6b49275cf974604ed4512(String), 6668602919259211(String)
+2020-10-17 15:54:44.782 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - <==    Updates: 1
+2020-10-17 15:54:44.783 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankWithdrawMapper.insert : 159 ] - ==>  Preparing: insert into bank_withdraw (withdraw_id, cust_id, account, withdraw_money, withdraw_date, arrive_time, reviewer_id) values (?, ?, ?, ?, ?, ?, ?) 
+2020-10-17 15:54:44.784 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankWithdrawMapper.insert : 159 ] - ==> Parameters: 277466986974547968(String), 277458221755805696(String), 6668602919259211(String), 5.0(Double), 1602921284782(String), 1602921286782(String), 1(String)
+2020-10-17 15:54:44.797 [ http-nio-8080-exec-2 ] - [ ERROR ] [ druid.sql.Statement : 152 ] - {conn-10009, pstmt-20022} execute error. insert into bank_withdraw (withdraw_id, cust_id, account, 
+      withdraw_money, withdraw_date, arrive_time, 
+      reviewer_id)
+    values (?, ?, ?, 
+      ?, ?, ?, 
+      ?)
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bank.bank_withdraw' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:619)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy114.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy72.insert(Unknown Source)
+	at com.bank.service.Impl.BankWithdrawServiceImpl.insert(BankWithdrawServiceImpl.java:59)
+	at com.bank.controller.BankWithdrawController.insert(BankWithdrawController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-17 16:35:26.034 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankRemitLogMapper.selectByExample : 159 ] - ==>  Preparing: select remit_id, remit_out_account, remit_in_account, amount, remit_generate_date, remit_arrive_date from bank_remit_log WHERE ( remit_id is not null ) 
+2020-10-17 16:35:26.035 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankRemitLogMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 16:35:26.063 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.bank.dao.BankRemitLogMapper.selectByExample : 159 ] - <==      Total: 0
+2020-10-17 16:50:44.549 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select loan_type_name, period_one, period_two, period_three, fine_rate from bank_loan_type where loan_type_name = ? 
+2020-10-17 16:50:44.550 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 小微贷款(String)
+2020-10-17 16:50:44.560 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 16:50:47.052 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select loan_type_name, period_one, period_two, period_three, fine_rate from bank_loan_type where loan_type_name = ? 
+2020-10-17 16:50:47.052 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 消费贷款(String)
+2020-10-17 16:50:47.063 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 16:51:07.895 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==>  Preparing: select update_date, current_rate, zczq_tm_rate, zczq_hy_rate, zczq_oy_rate, zczq_twy_rate, zczq_ty_rate, zczq_fy_rate, other_oy_rate, other_ty_rate, other_fy_rate from bank_deposit_rate order by update_date desc 
+2020-10-17 16:51:07.895 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 16:51:07.953 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 16:51:16.469 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==>  Preparing: select update_date, current_rate, zczq_tm_rate, zczq_hy_rate, zczq_oy_rate, zczq_twy_rate, zczq_ty_rate, zczq_fy_rate, other_oy_rate, other_ty_rate, other_fy_rate from bank_deposit_rate order by update_date desc 
+2020-10-17 16:51:16.469 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 16:51:16.483 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankDepositRateMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 17:18:33.963 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer order by cust_id desc 
+2020-10-17 17:18:33.964 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - ==> Parameters: 
+2020-10-17 17:18:33.977 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByExample : 159 ] - <==      Total: 2
+2020-10-17 17:18:37.429 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-17 17:18:37.430 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 17:18:37.430 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( cust_id = ? ) 
+2020-10-17 17:18:37.431 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 17:18:37.441 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 17:18:37.441 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:18:41.469 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-17 17:18:41.470 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 270603386083356672(String)
+2020-10-17 17:18:41.470 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( cust_id = ? ) 
+2020-10-17 17:18:41.471 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 270603386083356672(String)
+2020-10-17 17:18:41.482 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 17:18:41.482 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:18:47.052 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-17 17:18:47.052 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 17:18:47.052 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( cust_id = ? ) 
+2020-10-17 17:18:47.053 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 17:18:47.062 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:18:47.067 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 17:20:07.165 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account WHERE ( account = ? ) 
+2020-10-17 17:20:07.166 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 17:20:07.178 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByExample : 159 ] - <==      Total: 1
+2020-10-17 17:20:07.179 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==>  Preparing: update bank_account SET cust_id = ?, deposit_bank = ?, balances = ?, blocked_balances = ?, open_date = ?, account_kind = ?, account_type = ?, password = ? where account = ? 
+2020-10-17 17:20:07.179 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==> Parameters: 277458221755805696(String), 天津市天津河东区浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区(String), 14.0(Double), 10.0(Double), 1602919259231(String), 2(String), 2(String), b56b94a9f7b6b49275cf974604ed4512(String), 6668602919259211(String)
+2020-10-17 17:20:07.196 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - <==    Updates: 1
+2020-10-17 17:20:07.197 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankWithdrawMapper.insert : 159 ] - ==>  Preparing: insert into bank_withdraw (withdraw_id, cust_id, account, withdraw_money, withdraw_date, arrive_time, reviewer_id) values (?, ?, ?, ?, ?, ?, ?) 
+2020-10-17 17:20:07.198 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankWithdrawMapper.insert : 159 ] - ==> Parameters: 277488471940272128(String), 277458221755805696(String), 6668602919259211(String), 1.0(Double), 1602926407197(String), 1602926409197(String), 1(String)
+2020-10-17 17:20:07.213 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.bank.dao.BankWithdrawMapper.insert : 159 ] - <==    Updates: 1
+2020-10-17 17:23:44.634 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account where account = ? 
+2020-10-17 17:23:44.635 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 17:23:44.642 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:23:44.643 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-17 17:23:44.644 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 17:23:44.650 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:23:59.239 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account where account = ? 
+2020-10-17 17:23:59.240 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 17:23:59.250 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:23:59.251 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-17 17:23:59.251 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 17:23:59.259 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:24:05.854 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account where account = ? 
+2020-10-17 17:24:05.854 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-17 17:24:05.865 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:24:05.865 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-17 17:24:05.866 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-17 17:24:05.875 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:24:05.877 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==>  Preparing: update bank_account SET balances = ? where account = ? 
+2020-10-17 17:24:05.878 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==> Parameters: 24.0(Double), 6668602919259211(String)
+2020-10-17 17:24:05.903 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - <==    Updates: 1
+2020-10-17 17:24:05.904 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankLoanMapper.insert : 159 ] - ==>  Preparing: insert into bank_loan (trans_id, cust_id, account, trans_date, loan_amount, ins_count, loan_interest, loan_amount_sum, expiration_date, recovered_amount, loan_status, reviewer_id, loan_type_name) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-10-17 17:24:05.906 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankLoanMapper.insert : 159 ] - ==> Parameters: 277489473032687616(String), 277458221755805696(String), 6668602919259211(String), 1602926645903(String), 10.0(Double), 3(Short), 4.0(Double), 10.1(Double), 1610899199000(String), 0.0(Double), 未到期(String), 1(String), 小微贷款(String)
+2020-10-17 17:24:05.949 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankLoanMapper.insert : 159 ] - <==    Updates: 1
+2020-10-17 17:24:05.950 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select loan_type_name, period_one, period_two, period_three, fine_rate from bank_loan_type where loan_type_name = ? 
+2020-10-17 17:24:05.950 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 小微贷款(String)
+2020-10-17 17:24:05.960 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-17 17:24:05.961 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankLoanPaymentMapper.insert : 159 ] - ==>  Preparing: insert into bank_loan_payment (payment_id, trans_id, ins_num, payment_amount, payment_date, is_finished, fine_rate, all_payment_amount, reimbursement ) values (?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-17 17:24:05.962 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.bank.dao.BankLoanPaymentMapper.insert : 159 ] - ==> Parameters: 277489473389207552(String), 277489473032687616(String), 1(Short), 3.36(Double), 1605628799000(String), false(String), 8.0(Double), 3.36(Double), 0.0(Double)
+2020-10-17 17:24:05.977 [ http-nio-8080-exec-4 ] - [ ERROR ] [ druid.sql.Statement : 152 ] - {conn-10014, pstmt-20038} execute error. insert into bank_loan_payment (payment_id, trans_id, ins_num, 
+      payment_amount, payment_date, is_finished, 
+      fine_rate, all_payment_amount, reimbursement
+      )
+    values (?, ?, ?, 
+      ?, ?, ?, 
+      ?, ?, ?
+      )
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bank.bank_loan_payment' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:619)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy114.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy78.insert(Unknown Source)
+	at com.bank.service.Impl.LoanServiceImpl.dealApplyment(LoanServiceImpl.java:153)
+	at com.bank.controller.LoanController.applyLoan(LoanController.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

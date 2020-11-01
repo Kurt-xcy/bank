@@ -1,0 +1,13 @@
+2020-10-11 21:34:53.909 [ main ] - [ INFO  ] [ com.bank.BankApplication : 48 ] - Starting BankApplication on Kurts-MBP with PID 6453 (/Users/kurtfile/IT/IdeaProjects/bank-master/target/classes started by kurtfile in /Users/kurtfile/IT/IdeaProjects/bank-master)
+2020-10-11 21:34:53.915 [ main ] - [ DEBUG ] [ com.bank.BankApplication : 51 ] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2020-10-11 21:34:53.915 [ main ] - [ INFO  ] [ com.bank.BankApplication : 593 ] - No active profile set, falling back to default profiles: default
+2020-10-11 21:34:54.097 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 30 ] - HV000001: Hibernate Validator 5.3.6.Final
+2020-10-11 21:34:55.343 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 180 ] - Starting service [Tomcat]
+2020-10-11 21:34:55.344 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 180 ] - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-10-11 21:34:55.428 [ localhost-startStop-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring embedded WebApplicationContext
+2020-10-11 21:34:57.252 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-11 21:34:57.260 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-11 21:34:57.280 [ main ] - [ INFO  ] [ org.apache.tomcat.util.net.NioSelectorPool : 180 ] - Using a shared selector for servlet write/read
+2020-10-11 21:34:57.296 [ main ] - [ INFO  ] [ com.bank.BankApplication : 57 ] - Started BankApplication in 4.005 seconds (JVM running for 4.669)
+2020-10-11 21:34:59.571 [ RMI TCP Connection(1)-192.168.43.189 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-10-11 22:27:31.172 [ Thread-8 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed

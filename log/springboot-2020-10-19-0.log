@@ -1,0 +1,148 @@
+2020-10-19 10:19:18.057 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select account, cust_id, deposit_bank, balances, blocked_balances, open_date, cancel_date, account_kind, account_type, account_status, password from bank_account where account = ? 
+2020-10-19 10:19:18.074 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 6668602919259211(String)
+2020-10-19 10:19:18.085 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankAccountMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-19 10:19:18.086 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select cust_id, cust_name, password, identity_card, cust_type, sex, phone, address, email, credit from bank_customer where cust_id = ? 
+2020-10-19 10:19:18.087 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 277458221755805696(String)
+2020-10-19 10:19:18.100 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankCustomerMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-19 10:19:18.104 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==>  Preparing: update bank_account SET balances = ? where account = ? 
+2020-10-19 10:19:18.105 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - ==> Parameters: 34.0(Double), 6668602919259211(String)
+2020-10-19 10:19:18.124 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.b.d.B.updateByPrimaryKeySelective : 159 ] - <==    Updates: 1
+2020-10-19 10:19:18.126 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankLoanMapper.insert : 159 ] - ==>  Preparing: insert into bank_loan (trans_id, cust_id, account, trans_date, loan_amount, ins_count, loan_interest, loan_amount_sum, expiration_date, recovered_amount, loan_status, reviewer_id, loan_type_name) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-10-19 10:19:18.127 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankLoanMapper.insert : 159 ] - ==> Parameters: 278107345287254016(String), 277458221755805696(String), 6668602919259211(String), 1603073958125(String), 10.0(Double), 3(Short), 4.0(Double), 10.1(Double), 1611071999000(String), 0.0(Double), 未到期(String), 1(String), 小微贷款(String)
+2020-10-19 10:19:18.147 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankLoanMapper.insert : 159 ] - <==    Updates: 1
+2020-10-19 10:19:18.147 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - ==>  Preparing: select loan_type_name, period_one, period_two, period_three, fine_rate from bank_loan_type where loan_type_name = ? 
+2020-10-19 10:19:18.148 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - ==> Parameters: 小微贷款(String)
+2020-10-19 10:19:18.158 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankLoanTypeMapper.selectByPrimaryKey : 159 ] - <==      Total: 1
+2020-10-19 10:19:18.160 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankLoanPaymentMapper.insert : 159 ] - ==>  Preparing: insert into bank_loan_payment (payment_id, trans_id, ins_num, payment_amount, payment_date, is_finished, fine_rate, all_payment_amount, reimbursement ) values (?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-19 10:19:18.160 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.bank.dao.BankLoanPaymentMapper.insert : 159 ] - ==> Parameters: 278107345530527744(String), 278107345287254016(String), 1(Short), 3.36(Double), 1605801599000(String), false(String), 8.0(Double), 3.36(Double), 0.0(Double)
+2020-10-19 10:19:18.175 [ http-nio-8080-exec-7 ] - [ ERROR ] [ druid.sql.Statement : 152 ] - {conn-10016, pstmt-20044} execute error. insert into bank_loan_payment (payment_id, trans_id, ins_num, 
+      payment_amount, payment_date, is_finished, 
+      fine_rate, all_payment_amount, reimbursement
+      )
+    values (?, ?, ?, 
+      ?, ?, ?, 
+      ?, ?, ?
+      )
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bank.bank_loan_payment' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:619)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy114.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy78.insert(Unknown Source)
+	at com.bank.service.Impl.LoanServiceImpl.dealApplyment(LoanServiceImpl.java:153)
+	at com.bank.controller.LoanController.applyLoan(LoanController.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-19 12:34:46.392 [ Thread-7 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1818 ] - {dataSource-1} closed
+2020-10-19 14:13:09.780 [ main ] - [ INFO  ] [ com.bank.BankApplication : 48 ] - Starting BankApplication on Kurts-MacBook-Pro.local with PID 22801 (/Users/kurtfile/IT/IdeaProjects/bank-master/target/classes started by kurtfile in /Users/kurtfile/IT/IdeaProjects/bank-master)
+2020-10-19 14:13:09.785 [ main ] - [ DEBUG ] [ com.bank.BankApplication : 51 ] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2020-10-19 14:13:09.786 [ main ] - [ INFO  ] [ com.bank.BankApplication : 593 ] - No active profile set, falling back to default profiles: default
+2020-10-19 14:13:09.981 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 30 ] - HV000001: Hibernate Validator 5.3.6.Final
+2020-10-19 14:13:11.218 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 180 ] - Starting service [Tomcat]
+2020-10-19 14:13:11.220 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 180 ] - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-10-19 14:13:11.308 [ localhost-startStop-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring embedded WebApplicationContext
+2020-10-19 14:13:13.071 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-19 14:13:13.077 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-19 14:13:13.093 [ main ] - [ INFO  ] [ org.apache.tomcat.util.net.NioSelectorPool : 180 ] - Using a shared selector for servlet write/read
+2020-10-19 14:13:13.108 [ main ] - [ INFO  ] [ com.bank.BankApplication : 57 ] - Started BankApplication in 3.833 seconds (JVM running for 4.561)
+2020-10-19 14:13:13.890 [ RMI TCP Connection(1)-127.0.0.1 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-10-19 20:25:00.194 [ main ] - [ INFO  ] [ com.bank.BankApplicationTests : 48 ] - Starting BankApplicationTests on Kurts-MacBook-Pro.local with PID 25753 (started by kurtfile in /Users/kurtfile/IT/IdeaProjects/bank-master)
+2020-10-19 20:25:00.199 [ main ] - [ DEBUG ] [ com.bank.BankApplicationTests : 51 ] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2020-10-19 20:25:00.201 [ main ] - [ INFO  ] [ com.bank.BankApplicationTests : 593 ] - No active profile set, falling back to default profiles: default
+2020-10-19 20:25:00.666 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 30 ] - HV000001: Hibernate Validator 5.3.6.Final
+2020-10-19 20:25:03.922 [ main ] - [ INFO  ] [ com.bank.BankApplicationTests : 57 ] - Started BankApplicationTests in 4.455 seconds (JVM running for 5.161)

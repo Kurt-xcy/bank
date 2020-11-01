@@ -1,0 +1,16 @@
+2020-11-01 20:30:54.238 [ main ] - [ INFO  ] [ com.bank.BankApplication : 48 ] - Starting BankApplication on Kurts-MacBook-Pro.local with PID 5605 (/Users/kurtfile/IT/IdeaProjects/bank-master/target/classes started by kurtfile in /Users/kurtfile/IT/IdeaProjects/bank-master)
+2020-11-01 20:30:54.245 [ main ] - [ DEBUG ] [ com.bank.BankApplication : 51 ] - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2020-11-01 20:30:54.246 [ main ] - [ INFO  ] [ com.bank.BankApplication : 593 ] - No active profile set, falling back to default profiles: default
+2020-11-01 20:30:54.492 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 30 ] - HV000001: Hibernate Validator 5.3.6.Final
+2020-11-01 20:30:55.877 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 180 ] - Starting service [Tomcat]
+2020-11-01 20:30:55.878 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 180 ] - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-01 20:30:55.942 [ localhost-startStop-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring embedded WebApplicationContext
+2020-11-01 20:30:58.101 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-01 20:30:58.110 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 180 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-11-01 20:30:58.131 [ main ] - [ INFO  ] [ org.apache.tomcat.util.net.NioSelectorPool : 180 ] - Using a shared selector for servlet write/read
+2020-11-01 20:30:58.149 [ main ] - [ INFO  ] [ com.bank.BankApplication : 57 ] - Started BankApplication in 4.407 seconds (JVM running for 5.05)
+2020-11-01 20:31:10.001 [ RMI TCP Connection(2)-127.0.0.1 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 923 ] - {dataSource-1} inited
+2020-11-01 20:33:48.862 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 180 ] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-01 20:33:58.046 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==>  Preparing: select user_id, user_name, password, user_type, phone, address, email from bank_user WHERE ( user_name = ? and password = ? ) 
+2020-11-01 20:33:58.089 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - ==> Parameters: zjxcy123(String), 187a6fff600a3c15bdf34874369a843c(String)
+2020-11-01 20:33:58.104 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.bank.dao.BankUserMapper.selectByExample : 159 ] - <==      Total: 1
